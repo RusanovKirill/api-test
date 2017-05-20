@@ -6,18 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .preloader {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            font-weight: 600;
+            z-index: 5;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <h1 class="text-uppercase text-center">gallery</h1>
     <div class="container">
         <div class="row" id="posts">
-            <div class="col-md-3 text-center">
-                <h3 class="text-uppercase text-left"> Title </h3>
-                <img src="https://www.maxprog.com/img/cat.jpg" class="img-responsive" alt="">
-                <p> Likes: 0 </p>
-            </div>
+            
         </div>
     </div>
+    <div class="preloader"> Loading... </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
